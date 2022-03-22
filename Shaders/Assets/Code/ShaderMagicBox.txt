@@ -1,0 +1,11 @@
+void Specular_half (half specular, half3 smoothness, half 3 direction, half3 color,
+half3 worldNormal, half3 worldView, out half3 out) {
+    #if SHADERGRAOH_PREVIEW
+    out = 0;
+    #else
+        smoothness = exp2(10 * smoothness) + 1;
+        worldNormal = normalize(worldView);
+        worldView = safeNormalize(_WorldView);
+        Out = LightingSpecular(Color, Direction, worldNormal, worldView, half4 (Specular, 0), smoothness);
+        #endif
+}
