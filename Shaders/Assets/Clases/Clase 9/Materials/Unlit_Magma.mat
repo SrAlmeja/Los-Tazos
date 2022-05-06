@@ -32,10 +32,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _DisSpeed: 0.1
-    - _DisValue: 3
-    - _WaveAmplitude: 0.44
-    - _WaveFrequency: 1.34
-    - _WaveSpeed: 1
+    - _DisSpeed: -0.014
+    - _DisValue: 4.5
+    - _WaveAmplitude: 0.03
+    - _WaveFrequency: 0.52
+    - _WaveSpeed: 2.12
     m_Colors: []
   m_BuildTextureStacks: []
