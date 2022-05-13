@@ -14,6 +14,6 @@ public class Code : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.Rotate(0,1,0);
+        gameObject.transform.Rotate(0,(8 * Time.deltaTime),0);
     }
 }
